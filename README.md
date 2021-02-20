@@ -21,7 +21,7 @@ The project is structured in 6 packages, each package containing the classes tha
 #BookController, ClientController, LibraryController These classes contain implementations of the methods in the interfaces in the repository package and manipulate the data in the tables. They contain methods that search for objects in the database by a certain Id, Name or title, make insertions in the database, deletions, updates. Annotations are very important, especially @RestController which tells us that class has the behavior of a controller. The connections between the application and the Java code are made through these annotations.
 
 #BookRepository, ClientRepository, LibraryRepository These interfaces extend the JpaRepository class and mean that they have several methods implemented by default. These classes are part of the repository package
-#Book, Client, Library These classes are in the model package and are the representation of the entities used in the controllers. They have the specific annotations @Table, @Entity and also have variables, constructors, get-eras and set-eras.
+#Book, Client, Library These classes are in the model package and are the representation of the entities used in the controllers. They have the specific annotations @Table, @Entity and also have variables, constructors, geters and seters.
 #Observer, User, UserFactory These classes are part of the useful package and represent the implementation of the required design patterns, respectively Observ and FactoryPattern. ** 
 
 4. Graphical interface
